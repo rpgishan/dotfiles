@@ -18,8 +18,12 @@ export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 # Enable plugins.
 plugins=(git brew history kubectl history-substring-search)
 
+export DEV_ENV_HOME=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/Developments/DevEnv/
+
+export JAVA_HOME=$DEV_ENV_HOME/java/jdk-17.0.2.jdk/Contents/Home/
+
 # Custom $PATH with extra locations.
-export PATH=$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
+export PATH=$DEV_ENV_HOME/bin:$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
 
 # Bash-style time output.
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
