@@ -18,7 +18,9 @@ export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 # Enable plugins.
 plugins=(git brew history kubectl history-substring-search)
 
-export DEV_ENV_HOME=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/Developments/DevEnv/
+
+# export DEV_ENV_HOME=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs/Development/DevEnv/
+export DEV_ENV_HOME=$HOME/Development-local/DevEnv/
 
 export JAVA_HOME=$DEV_ENV_HOME/java/jdk-17.0.2.jdk/Contents/Home/
 
